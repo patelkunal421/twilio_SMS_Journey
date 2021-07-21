@@ -109,7 +109,7 @@ exports.execute = function (req, res) {
     client.messages 
           .create({ 
              body: body,
-             to: to,
+             to: '+918976734094',
              from: '+18042772465'
              
            }) 
