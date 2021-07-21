@@ -103,8 +103,6 @@ exports.execute = function (req, res) {
     console.log("to: "+to);
     const from = requestBody.messagingService;
     const body = requestBody.body;
-    const email = requestBody.email;
-    console.log("to: "+email);
 
     const client = require('twilio')(accountSid, authToken); 
      
