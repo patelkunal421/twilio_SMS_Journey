@@ -93,13 +93,14 @@ exports.execute = function (req, res) {
     console.log("3");	
     console.log("2");	
     console.log("1");	
-    //console.log("Executed: "+req.body.inArguments[0]);
+    console.log("Executed: "+req.body.inArguments[0]);
     
     var requestBody = req.body.inArguments[0];
 
     const accountSid = requestBody.accountSid;
     const authToken = requestBody.authToken;
     const to = requestBody.to;
+    console.log("to: "+to);
     const from = requestBody.messagingService;
     const body = requestBody.body;;
 
@@ -108,7 +109,7 @@ exports.execute = function (req, res) {
     client.messages 
           .create({ 
              body: body,
-             messagingService: from,
+             messagingService: '(804) 277-2465',
              to: to
            }) 
           .then(message => console.log(message.sid)) 
