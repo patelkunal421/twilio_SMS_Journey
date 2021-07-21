@@ -17,7 +17,7 @@
             "inArguments": [
                 {
                   "email": "{{Contact.Default.EmailAddress}}",
-                  "to": "{{Contact.Attribute.SMS_Test.PhoneNumber}}" 
+                  "to": "+918976734094" 
                 }               
             ],
             "outArguments": [],

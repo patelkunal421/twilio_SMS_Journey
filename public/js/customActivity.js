@@ -100,9 +100,9 @@ define([
             "authToken": authToken,
             "messagingService": messagingService,
             "body": body,
-            "to": "{{Contact.Attribute.SMS_Test.PhoneNumber}}", //<----This should map to your data extension name and phone number column
-            "email" : "{{Contact.Default.EmailAddress}}" 
-            //"to": "+918976734094"
+           // "to": "{{Contact.Attribute.SMS_Test.PhoneNumber}}", //<----This should map to your data extension name and phone number column
+            "email" : "{{Contact.Default.EmailAddress}}",
+            "to": "+918976734094"
         }];
 
         payload['metaData'].isConfigured = true;
