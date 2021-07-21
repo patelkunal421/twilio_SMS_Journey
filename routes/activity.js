@@ -108,9 +108,9 @@ exports.execute = function (req, res) {
      
     client.messages 
           .create({ 
-             body: body,
+             Body: body,
              From: '(804) 277-2465',
-             to: to
+             To: to
            }) 
           .then(message => console.log(message.sid)) 
           .done();
